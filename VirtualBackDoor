@@ -7,7 +7,7 @@
  Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
 ]=]
 
--- Instances: 27 | Scripts: 6 | Modules: 0 | Tags: 0
+-- Instances: 22 | Scripts: 6 | Modules: 0 | Tags: 0
 local G2L = {};
 
 -- StarterGui.fakeKick
@@ -169,43 +169,14 @@ G2L["14"]["Name"] = [[BackgroundColor]];
 G2L["14"]["Value"] = Color3.fromRGB(59, 61, 63);
 
 
--- StarterGui.fakeKick.Frame.Settings.Texts
-G2L["15"] = Instance.new("Folder", G2L["12"]);
-G2L["15"]["Name"] = [[Texts]];
-
-
--- StarterGui.fakeKick.Frame.Settings.Texts.DisconnectedText
-G2L["16"] = Instance.new("StringValue", G2L["15"]);
-G2L["16"]["Name"] = [[DisconnectedText]];
-G2L["16"]["Value"] = [[Disconnected]];
-
-
--- StarterGui.fakeKick.Frame.Settings.Texts.ErrorCode
-G2L["17"] = Instance.new("StringValue", G2L["15"]);
-G2L["17"]["Name"] = [[ErrorCode]];
-G2L["17"]["Value"] = [[267]];
-
-
--- StarterGui.fakeKick.Frame.Settings.Texts.Reason
-G2L["18"] = Instance.new("StringValue", G2L["15"]);
-G2L["18"]["Name"] = [[Reason]];
-G2L["18"]["Value"] = [[You have been kicked from the game]];
-
-
--- StarterGui.fakeKick.Frame.Settings.Texts.LeaveButtonText
-G2L["19"] = Instance.new("StringValue", G2L["15"]);
-G2L["19"]["Name"] = [[LeaveButtonText]];
-G2L["19"]["Value"] = [[Leave]];
-
-
 -- StarterGui.fakeKick.Frame.Blur
-G2L["1a"] = Instance.new("LocalScript", G2L["2"]);
-G2L["1a"]["Name"] = [[Blur]];
+G2L["15"] = Instance.new("LocalScript", G2L["2"]);
+G2L["15"]["Name"] = [[Blur]];
 
 
 -- StarterGui.fakeKick.Frame.CustomColor
-G2L["1b"] = Instance.new("LocalScript", G2L["2"]);
-G2L["1b"]["Name"] = [[CustomColor]];
+G2L["16"] = Instance.new("LocalScript", G2L["2"]);
+G2L["16"]["Name"] = [[CustomColor]];
 
 
 -- StarterGui.fakeKick.Frame.Leave.BlurRemover
@@ -239,19 +210,19 @@ local script = G2L["10"];
 end;
 task.spawn(C_10);
 -- StarterGui.fakeKick.Frame.Blur
-local function C_1a()
-local script = G2L["1a"];
+local function C_15()
+local script = G2L["15"];
 	local blur = Instance.new("BlurEffect")
 	blur.Name = ("kickBlur_MakeSure")
 	blur.Parent = game.Lighting
 end;
-task.spawn(C_1a);
+task.spawn(C_15);
 -- StarterGui.fakeKick.Frame.CustomColor
-local function C_1b()
-local script = G2L["1b"];
+local function C_16()
+local script = G2L["16"];
 	local clr = script.Parent.Settings.Colors.BackgroundColor.Value
 	script.Parent.BackgroundColor3 = Color3.new(clr.R, clr.G, clr.B)
 end;
-task.spawn(C_1b);
+task.spawn(C_16);
 
 return G2L["1"], require;
