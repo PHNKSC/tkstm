@@ -1,0 +1,915 @@
+
+-- Instances: 72 | Scripts: 21 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.guiz
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[guiz]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.guiz.eijno
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2"]["Size"] = UDim2.new(0.37246, 0, 0.46909, 0);
+G2L["2"]["Position"] = UDim2.new(0.33393, 0, 0.26543, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[eijno]];
+G2L["2"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.guiz.eijno.Frame
+G2L["4"] = Instance.new("Frame", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["Size"] = UDim2.new(0.94608, 0, 0.19088, 0);
+G2L["4"]["Position"] = UDim2.new(0.02652, 0, 0.03108, 0);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.Frame.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+
+
+
+-- StarterGui.guiz.eijno.Frame.TextLabel
+G2L["6"] = Instance.new("TextLabel", G2L["4"]);
+G2L["6"]["TextWrapped"] = true;
+G2L["6"]["BorderSizePixel"] = 0;
+G2L["6"]["TextScaled"] = true;
+G2L["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["TextSize"] = 14;
+G2L["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["6"]["BackgroundTransparency"] = 1;
+G2L["6"]["Size"] = UDim2.new(0.48314, 0, 0.81696, 0);
+G2L["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["6"]["Text"] = [[KEY SYSTEM]];
+G2L["6"]["Position"] = UDim2.new(0.02414, 0, -0.03588, 0);
+
+
+-- StarterGui.guiz.eijno.Frame.animate
+G2L["7"] = Instance.new("LocalScript", G2L["4"]);
+G2L["7"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.Frame.Frame
+G2L["8"] = Instance.new("Frame", G2L["4"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["Size"] = UDim2.new(0.80656, 0, 0.19088, 0);
+G2L["8"]["Position"] = UDim2.new(0.02402, 0, 0.69113, 0);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.Frame.Frame.UICorner
+G2L["9"] = Instance.new("UICorner", G2L["8"]);
+
+
+
+-- StarterGui.guiz.eijno.Frame.Frame.animate
+G2L["a"] = Instance.new("LocalScript", G2L["8"]);
+G2L["a"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.Frame.close
+G2L["b"] = Instance.new("Frame", G2L["4"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["b"]["Size"] = UDim2.new(0.13257, 0, 0.79526, 0);
+G2L["b"]["Position"] = UDim2.new(0.85244, 0, 0.08955, 0);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Name"] = [[close]];
+G2L["b"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.Frame.close.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["b"]);
+
+
+
+-- StarterGui.guiz.eijno.Frame.close.animate
+G2L["d"] = Instance.new("LocalScript", G2L["b"]);
+G2L["d"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.Frame.close.TextButton
+G2L["e"] = Instance.new("TextButton", G2L["b"]);
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["TextScaled"] = true;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[X]];
+
+
+-- StarterGui.guiz.eijno.Frame.close.TextButton.LocalScript
+G2L["f"] = Instance.new("LocalScript", G2L["e"]);
+
+
+
+-- StarterGui.guiz.eijno.btn
+G2L["10"] = Instance.new("Frame", G2L["2"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["10"]["Size"] = UDim2.new(0.94608, 0, 0.19088, 0);
+G2L["10"]["Position"] = UDim2.new(0.02652, 0, 0.78108, 0);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Name"] = [[btn]];
+G2L["10"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.btn.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["10"]);
+
+
+
+-- StarterGui.guiz.eijno.btn.animate
+G2L["12"] = Instance.new("LocalScript", G2L["10"]);
+G2L["12"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.btn.TextButton
+G2L["13"] = Instance.new("TextButton", G2L["10"]);
+G2L["13"]["TextWrapped"] = true;
+G2L["13"]["BorderSizePixel"] = 0;
+G2L["13"]["TextSize"] = 14;
+G2L["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["TextScaled"] = true;
+G2L["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["13"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["13"]["BackgroundTransparency"] = 1;
+G2L["13"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["13"]["Text"] = [[GETKEY]];
+
+
+-- StarterGui.guiz.eijno.btn.TextButton.LocalScript
+G2L["14"] = Instance.new("LocalScript", G2L["13"]);
+
+
+
+-- StarterGui.guiz.eijno.btn.i3
+G2L["15"] = Instance.new("Frame", G2L["10"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["15"]["Size"] = UDim2.new(0.05182, 0, 1, 0);
+G2L["15"]["Position"] = UDim2.new(0.94615, 0, 0, 0);
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Name"] = [[i3]];
+G2L["15"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.btn.i3.UICorner
+G2L["16"] = Instance.new("UICorner", G2L["15"]);
+
+
+
+-- StarterGui.guiz.eijno.btn.i3.animate
+G2L["17"] = Instance.new("LocalScript", G2L["15"]);
+G2L["17"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.btn.i3
+G2L["18"] = Instance.new("Frame", G2L["10"]);
+G2L["18"]["BorderSizePixel"] = 0;
+G2L["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["18"]["Size"] = UDim2.new(0.05182, 0, 1, 0);
+G2L["18"]["Position"] = UDim2.new(-0.00028, 0, -0.01729, 0);
+G2L["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["18"]["Name"] = [[i3]];
+G2L["18"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.btn.i3.UICorner
+G2L["19"] = Instance.new("UICorner", G2L["18"]);
+
+
+
+-- StarterGui.guiz.eijno.btn.i3.animate
+G2L["1a"] = Instance.new("LocalScript", G2L["18"]);
+G2L["1a"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.animate
+G2L["1b"] = Instance.new("LocalScript", G2L["2"]);
+G2L["1b"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.kk
+G2L["1c"] = Instance.new("Frame", G2L["2"]);
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1c"]["Size"] = UDim2.new(0.94608, 0, 0.51136, 0);
+G2L["1c"]["Position"] = UDim2.new(0.02652, 0, 0.24313, 0);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Name"] = [[kk]];
+G2L["1c"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.kk.UICorner
+G2L["1d"] = Instance.new("UICorner", G2L["1c"]);
+
+
+
+-- StarterGui.guiz.eijno.kk.animate
+G2L["1e"] = Instance.new("LocalScript", G2L["1c"]);
+G2L["1e"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.kk.btn
+G2L["1f"] = Instance.new("Frame", G2L["1c"]);
+G2L["1f"]["BorderSizePixel"] = 0;
+G2L["1f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["1f"]["Size"] = UDim2.new(0.94608, 0, 0.27477, 0);
+G2L["1f"]["Position"] = UDim2.new(0.02652, 0, 0.53585, 0);
+G2L["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1f"]["Name"] = [[btn]];
+G2L["1f"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.kk.btn.UICorner
+G2L["20"] = Instance.new("UICorner", G2L["1f"]);
+
+
+
+-- StarterGui.guiz.eijno.kk.btn.animate
+G2L["21"] = Instance.new("LocalScript", G2L["1f"]);
+G2L["21"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.kk.btn.TextButton
+G2L["22"] = Instance.new("TextButton", G2L["1f"]);
+G2L["22"]["TextWrapped"] = true;
+G2L["22"]["BorderSizePixel"] = 0;
+G2L["22"]["TextSize"] = 14;
+G2L["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["TextScaled"] = true;
+G2L["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["22"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["22"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["22"]["BackgroundTransparency"] = 1;
+G2L["22"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["22"]["Text"] = [[CHECK]];
+
+
+-- StarterGui.guiz.eijno.kk.btn.TextButton.LocalScript
+G2L["23"] = Instance.new("LocalScript", G2L["22"]);
+
+
+
+-- StarterGui.guiz.eijno.kk.btn.TextButton.LocalScript.Sonic Unleashed SFX - Trick Jump Fail
+G2L["24"] = Instance.new("Sound", G2L["23"]);
+G2L["24"]["Name"] = [[Sonic Unleashed SFX - Trick Jump Fail]];
+G2L["24"]["SoundId"] = [[rbxassetid://1053872519]];
+
+
+-- StarterGui.guiz.eijno.kk.btn.TextButton.LocalScript.beep
+G2L["25"] = Instance.new("Sound", G2L["23"]);
+G2L["25"]["Name"] = [[beep]];
+G2L["25"]["SoundId"] = [[rbxassetid://1283290053]];
+
+
+-- StarterGui.guiz.eijno.kk.btn.i3
+G2L["26"] = Instance.new("Frame", G2L["1f"]);
+G2L["26"]["BorderSizePixel"] = 0;
+G2L["26"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["26"]["Size"] = UDim2.new(0.05182, 0, 1, 0);
+G2L["26"]["Position"] = UDim2.new(0.9463, 0, 0, 0);
+G2L["26"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["26"]["Name"] = [[i3]];
+G2L["26"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.kk.btn.i3.UICorner
+G2L["27"] = Instance.new("UICorner", G2L["26"]);
+
+
+
+-- StarterGui.guiz.eijno.kk.btn.i3.animate
+G2L["28"] = Instance.new("LocalScript", G2L["26"]);
+G2L["28"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.kk.btn.i3
+G2L["29"] = Instance.new("Frame", G2L["1f"]);
+G2L["29"]["BorderSizePixel"] = 0;
+G2L["29"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["29"]["Size"] = UDim2.new(0.05182, 0, 1, 0);
+G2L["29"]["Position"] = UDim2.new(-0.00528, 0, 0, 0);
+G2L["29"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["29"]["Name"] = [[i3]];
+G2L["29"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.kk.btn.i3.UICorner
+G2L["2a"] = Instance.new("UICorner", G2L["29"]);
+
+
+
+-- StarterGui.guiz.eijno.kk.btn.i3.animate
+G2L["2b"] = Instance.new("LocalScript", G2L["29"]);
+G2L["2b"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.kk.btn.TextLabel
+G2L["2c"] = Instance.new("TextLabel", G2L["1f"]);
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["TextSize"] = 14;
+G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["2c"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["BackgroundTransparency"] = 1;
+G2L["2c"]["Size"] = UDim2.new(1.00868, 0, 0.65761, 0);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Text"] = [[paste key in textbox and press check button .]];
+G2L["2c"]["Position"] = UDim2.new(0, 0, 0.98641, 0);
+
+
+-- StarterGui.guiz.eijno.kk.kksy
+G2L["2d"] = Instance.new("Frame", G2L["1c"]);
+G2L["2d"]["BorderSizePixel"] = 0;
+G2L["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2d"]["Size"] = UDim2.new(0.94608, 0, 0.34576, 0);
+G2L["2d"]["Position"] = UDim2.new(0.02652, 0, 0.08412, 0);
+G2L["2d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2d"]["Name"] = [[kksy]];
+G2L["2d"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.kk.kksy.UICorner
+G2L["2e"] = Instance.new("UICorner", G2L["2d"]);
+
+
+
+-- StarterGui.guiz.eijno.kk.kksy.animate
+G2L["2f"] = Instance.new("LocalScript", G2L["2d"]);
+G2L["2f"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.kk.kksy.i3
+G2L["30"] = Instance.new("Frame", G2L["2d"]);
+G2L["30"]["BorderSizePixel"] = 0;
+G2L["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["30"]["Size"] = UDim2.new(0.05182, 0, 1, 0);
+G2L["30"]["Position"] = UDim2.new(0.9463, 0, 0, 0);
+G2L["30"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["30"]["Name"] = [[i3]];
+G2L["30"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.kk.kksy.i3.UICorner
+G2L["31"] = Instance.new("UICorner", G2L["30"]);
+
+
+
+-- StarterGui.guiz.eijno.kk.kksy.i3.animate
+G2L["32"] = Instance.new("LocalScript", G2L["30"]);
+G2L["32"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.kk.kksy.i3
+G2L["33"] = Instance.new("Frame", G2L["2d"]);
+G2L["33"]["BorderSizePixel"] = 0;
+G2L["33"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["33"]["Size"] = UDim2.new(0.05182, 0, 1, 0);
+G2L["33"]["Position"] = UDim2.new(-0.00528, 0, 0, 0);
+G2L["33"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["33"]["Name"] = [[i3]];
+G2L["33"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.kk.kksy.i3.UICorner
+G2L["34"] = Instance.new("UICorner", G2L["33"]);
+
+
+
+-- StarterGui.guiz.eijno.kk.kksy.i3.animate
+G2L["35"] = Instance.new("LocalScript", G2L["33"]);
+G2L["35"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.kk.kksy.TextBox
+G2L["36"] = Instance.new("TextBox", G2L["2d"]);
+G2L["36"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["BorderSizePixel"] = 0;
+G2L["36"]["TextWrapped"] = true;
+G2L["36"]["TextSize"] = 14;
+G2L["36"]["TextScaled"] = true;
+G2L["36"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["36"]["FontFace"] = Font.new([[rbxasset://fonts/families/Arial.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["36"]["Size"] = UDim2.new(0.89712, 0, 1, 0);
+G2L["36"]["Position"] = UDim2.new(0.04654, 0, 0, 0);
+G2L["36"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["36"]["Text"] = [[]];
+G2L["36"]["BackgroundTransparency"] = 1;
+
+
+-- StarterGui.guiz.eijno.x
+G2L["37"] = Instance.new("Frame", G2L["2"]);
+G2L["37"]["BorderSizePixel"] = 0;
+G2L["37"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["37"]["Size"] = UDim2.new(0.94608, 0, 0.33646, 0);
+G2L["37"]["Position"] = UDim2.new(0.02652, 0, 1.17041, 0);
+G2L["37"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["37"]["Name"] = [[x]];
+G2L["37"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.x.UICorner
+G2L["38"] = Instance.new("UICorner", G2L["37"]);
+
+
+
+-- StarterGui.guiz.eijno.x.animate
+G2L["39"] = Instance.new("LocalScript", G2L["37"]);
+G2L["39"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.x.TextLabel
+G2L["3a"] = Instance.new("TextLabel", G2L["37"]);
+G2L["3a"]["TextWrapped"] = true;
+G2L["3a"]["BorderSizePixel"] = 0;
+G2L["3a"]["TextScaled"] = true;
+G2L["3a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["TextSize"] = 14;
+G2L["3a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3a"]["BackgroundTransparency"] = 1;
+G2L["3a"]["Size"] = UDim2.new(0.34824, 0, 0.21868, 0);
+G2L["3a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3a"]["Text"] = [[KEY SYSTEM]];
+G2L["3a"]["Position"] = UDim2.new(0.27396, 0, -0.00646, 0);
+
+
+-- StarterGui.guiz.eijno.x.TextLabel
+G2L["3b"] = Instance.new("TextLabel", G2L["37"]);
+G2L["3b"]["TextWrapped"] = true;
+G2L["3b"]["BorderSizePixel"] = 0;
+G2L["3b"]["TextScaled"] = true;
+G2L["3b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3b"]["TextSize"] = 14;
+G2L["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3b"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3b"]["BackgroundTransparency"] = 1;
+G2L["3b"]["Size"] = UDim2.new(0.61554, 0, 0.37561, 0);
+G2L["3b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3b"]["Text"] = [[PASSORD :]];
+G2L["3b"]["Position"] = UDim2.new(0.14156, 0, 0.29758, 0);
+
+
+-- StarterGui.guiz.eijno.x.noti
+G2L["3c"] = Instance.new("Frame", G2L["37"]);
+G2L["3c"]["BorderSizePixel"] = 0;
+G2L["3c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3c"]["Size"] = UDim2.new(0.22436, 0, 0.88185, 0);
+G2L["3c"]["Position"] = UDim2.new(0.75957, 0, 0.05233, 0);
+G2L["3c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3c"]["Name"] = [[noti]];
+G2L["3c"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.x.noti.UICorner
+G2L["3d"] = Instance.new("UICorner", G2L["3c"]);
+
+
+
+-- StarterGui.guiz.eijno.x.noti.animate
+G2L["3e"] = Instance.new("LocalScript", G2L["3c"]);
+G2L["3e"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.x.noti.TextLabel
+G2L["3f"] = Instance.new("TextLabel", G2L["3c"]);
+G2L["3f"]["TextWrapped"] = true;
+G2L["3f"]["BorderSizePixel"] = 0;
+G2L["3f"]["TextScaled"] = true;
+G2L["3f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3f"]["TextSize"] = 14;
+G2L["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["3f"]["TextColor3"] = Color3.fromRGB(255, 0, 5);
+G2L["3f"]["BackgroundTransparency"] = 1;
+G2L["3f"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["3f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3f"]["Text"] = [[X]];
+
+
+-- StarterGui.guiz.eijno.v
+G2L["40"] = Instance.new("Frame", G2L["2"]);
+G2L["40"]["BorderSizePixel"] = 0;
+G2L["40"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["40"]["Size"] = UDim2.new(0.94608, 0, 0.33646, 0);
+G2L["40"]["Position"] = UDim2.new(0.02652, 0, 1.17041, 0);
+G2L["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["40"]["Name"] = [[v]];
+G2L["40"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.v.UICorner
+G2L["41"] = Instance.new("UICorner", G2L["40"]);
+
+
+
+-- StarterGui.guiz.eijno.v.animate
+G2L["42"] = Instance.new("LocalScript", G2L["40"]);
+G2L["42"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.v.TextLabel
+G2L["43"] = Instance.new("TextLabel", G2L["40"]);
+G2L["43"]["TextWrapped"] = true;
+G2L["43"]["BorderSizePixel"] = 0;
+G2L["43"]["TextScaled"] = true;
+G2L["43"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["TextSize"] = 14;
+G2L["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["43"]["BackgroundTransparency"] = 1;
+G2L["43"]["Size"] = UDim2.new(0.34824, 0, 0.21868, 0);
+G2L["43"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["43"]["Text"] = [[KEY SYSTEM]];
+G2L["43"]["Position"] = UDim2.new(0.27396, 0, -0.00646, 0);
+
+
+-- StarterGui.guiz.eijno.v.TextLabel
+G2L["44"] = Instance.new("TextLabel", G2L["40"]);
+G2L["44"]["TextWrapped"] = true;
+G2L["44"]["BorderSizePixel"] = 0;
+G2L["44"]["TextScaled"] = true;
+G2L["44"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["TextSize"] = 14;
+G2L["44"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["44"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["44"]["BackgroundTransparency"] = 1;
+G2L["44"]["Size"] = UDim2.new(0.61554, 0, 0.37561, 0);
+G2L["44"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["44"]["Text"] = [[PASSORD :]];
+G2L["44"]["Position"] = UDim2.new(0.14156, 0, 0.29758, 0);
+
+
+-- StarterGui.guiz.eijno.v.noti
+G2L["45"] = Instance.new("Frame", G2L["40"]);
+G2L["45"]["BorderSizePixel"] = 0;
+G2L["45"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["45"]["Size"] = UDim2.new(0.22436, 0, 0.88185, 0);
+G2L["45"]["Position"] = UDim2.new(0.75957, 0, 0.05233, 0);
+G2L["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["45"]["Name"] = [[noti]];
+G2L["45"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.guiz.eijno.v.noti.UICorner
+G2L["46"] = Instance.new("UICorner", G2L["45"]);
+
+
+
+-- StarterGui.guiz.eijno.v.noti.animate
+G2L["47"] = Instance.new("LocalScript", G2L["45"]);
+G2L["47"]["Name"] = [[animate]];
+
+
+-- StarterGui.guiz.eijno.v.noti.TextLabel
+G2L["48"] = Instance.new("TextLabel", G2L["45"]);
+G2L["48"]["TextWrapped"] = true;
+G2L["48"]["BorderSizePixel"] = 0;
+G2L["48"]["TextScaled"] = true;
+G2L["48"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["48"]["TextSize"] = 14;
+G2L["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["48"]["TextColor3"] = Color3.fromRGB(99, 255, 232);
+G2L["48"]["BackgroundTransparency"] = 1;
+G2L["48"]["Size"] = UDim2.new(0.73143, 0, 0.61073, 0);
+G2L["48"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["48"]["Text"] = [[✔]];
+G2L["48"]["Position"] = UDim2.new(0.13361, 0, 0.17795, 0);
+
+
+-- StarterGui.guiz.eijno.Frame.animate
+local function C_7()
+local script = G2L["7"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.027, 0,-2, 0), "Out", "Elastic", 0, true)
+	
+	wait(1.2)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_7);
+-- StarterGui.guiz.eijno.Frame.Frame.animate
+local function C_a()
+local script = G2L["a"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.027, 0,-2, 0), "Out", "Elastic", 0, true)
+	mov:TweenSize(UDim2.new(0.955, 0,0.191, 0), "Out", "Elastic", 3, true)
+	wait(1.4)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+	wait(1)
+	mov:TweenSize(UDim2.new(0.807, 0,0.191, 0), "Out", "Elastic", 2, true)
+end;
+task.spawn(C_a);
+-- StarterGui.guiz.eijno.Frame.close.animate
+local function C_d()
+local script = G2L["d"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.85, 0,-20, 0), "Out", "Elastic", 0, true)
+	
+	wait(2.1)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 2, true)
+end;
+task.spawn(C_d);
+-- StarterGui.guiz.eijno.Frame.close.TextButton.LocalScript
+local function C_f()
+local script = G2L["f"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.close:TweenPosition(UDim2.new(0.85, 0,-20, 0), "In", "Back", 0.5, false)
+		script.Parent.Parent.Parent.Parent.Parent.eijno:TweenPosition(UDim2.new(0.334, 0,1.5, 0), "In", "Back", 0.5, false)
+		wait(2.2)
+		script.Parent.Parent.Parent.Parent.Parent.eijno.Visible = false
+	end)
+end;
+task.spawn(C_f);
+-- StarterGui.guiz.eijno.btn.animate
+local function C_12()
+local script = G2L["12"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.027, 0,-2, 0), "Out", "Elastic", 0, true)
+	
+	wait(1.4)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_12);
+-- StarterGui.guiz.eijno.btn.TextButton.LocalScript
+local function C_14()
+local script = G2L["14"];
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard("GET KEY LINK HERE.")
+	end)
+	
+	
+end;
+task.spawn(C_14);
+-- StarterGui.guiz.eijno.btn.i3.animate
+local function C_17()
+local script = G2L["17"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.474, 0,0, 0), "Out", "Elastic", 0, true)
+	
+	wait(2.5)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_17);
+-- StarterGui.guiz.eijno.btn.i3.animate
+local function C_1a()
+local script = G2L["1a"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.42, 0,0, 0), "Out", "Elastic", 0, true)
+	
+	wait(2.5)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_1a);
+-- StarterGui.guiz.eijno.animate
+local function C_1b()
+local script = G2L["1b"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.359, 0,-2, 0), "Out", "Elastic", 0, true)
+	
+	wait(1)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_1b);
+-- StarterGui.guiz.eijno.kk.animate
+local function C_1e()
+local script = G2L["1e"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.027, 0,-2, 0), "Out", "Elastic", 0, true)
+	
+	wait(1.3)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_1e);
+-- StarterGui.guiz.eijno.kk.btn.animate
+local function C_21()
+local script = G2L["21"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.027, 0,-2, 0), "Out", "Elastic", 0, true)
+	
+	wait(1.4)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_21);
+-- StarterGui.guiz.eijno.kk.btn.TextButton.LocalScript
+local function C_23()
+local script = G2L["23"];
+	local checkk = script.Parent.Parent.Parent.kksy.TextBox
+	
+	local sv = script.Parent.Parent.Parent.Parent.v
+	local sx = script.Parent.Parent.Parent.Parent.x
+	
+	local sxx = script.Parent.Parent.Parent.Parent.x.Position
+	local sxy = script.Parent.Parent.Parent.Parent.x.Position
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if checkk.Text == "KEY" then
+			sx.Visible = false
+			script.beep:Play()
+			sv:TweenPosition(UDim2.new(0.027, 0,1.17, 0), "Out", "Back", 0.5, true)
+			wait(0.6)
+			sv:TweenPosition(UDim2.new(0.027, 0,2, 0), "In", "Sine", 0.5, false)
+			wait(0.5)
+			sv.Visible = false
+			script.Parent.Parent.Parent.Parent.Parent.eijno:TweenPosition(UDim2.new(0.334, 0,-1.5, 0), "In", "Back", 1, false)
+			wait(0.5)
+			
+			
+			-- paste script here 
+			
+			
+			
+			
+			-- paste script here
+			
+		else
+			script["Sonic Unleashed SFX - Trick Jump Fail"]:Play()
+			sx:TweenPosition(UDim2.new(0.027, 0,1.17, 0), "Out", "Elastic", 0.5, true)
+			wait(0.6)
+			sx:TweenPosition(UDim2.new(0.027, 0,3, 0), "In", "Sine", 0.5, false)
+		end
+	end)
+end;
+task.spawn(C_23);
+-- StarterGui.guiz.eijno.kk.btn.i3.animate
+local function C_28()
+local script = G2L["28"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.474, 0,0, 0), "Out", "Elastic", 0, true)
+	
+	wait(2.5)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_28);
+-- StarterGui.guiz.eijno.kk.btn.i3.animate
+local function C_2b()
+local script = G2L["2b"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.42, 0,0, 0), "Out", "Elastic", 0, true)
+	
+	wait(2.5)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_2b);
+-- StarterGui.guiz.eijno.kk.kksy.animate
+local function C_2f()
+local script = G2L["2f"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.027, 0,-2, 0), "Out", "Elastic", 0, true)
+	
+	wait(1.4)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_2f);
+-- StarterGui.guiz.eijno.kk.kksy.i3.animate
+local function C_32()
+local script = G2L["32"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.474, 0,0, 0), "Out", "Elastic", 0, true)
+	
+	wait(2.5)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_32);
+-- StarterGui.guiz.eijno.kk.kksy.i3.animate
+local function C_35()
+local script = G2L["35"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.42, 0,0, 0), "Out", "Elastic", 0, true)
+	
+	wait(2.5)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_35);
+-- StarterGui.guiz.eijno.x.animate
+local function C_39()
+local script = G2L["39"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	script.Parent.Visible = false
+	mov:TweenPosition(UDim2.new(0.027, 0,3, 0), "Out", "Elastic", 0, true)
+	
+	wait(1.5)
+	script.Parent.Visible = true
+end;
+task.spawn(C_39);
+-- StarterGui.guiz.eijno.x.noti.animate
+local function C_3e()
+local script = G2L["3e"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.027, 0,-2, 0), "Out", "Elastic", 0, true)
+	
+	wait(1.3)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_3e);
+-- StarterGui.guiz.eijno.v.animate
+local function C_42()
+local script = G2L["42"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	script.Parent.Visible = false
+	mov:TweenPosition(UDim2.new(0.027, 0,3, 0), "Out", "Elastic", 0, true)
+	wait(1.5)
+	script.Parent.Visible = true
+end;
+task.spawn(C_42);
+-- StarterGui.guiz.eijno.v.noti.animate
+local function C_47()
+local script = G2L["47"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.027, 0,-2, 0), "Out", "Elastic", 0, true)
+	
+	wait(1.3)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_47);
+
+return G2L["1"], require;
