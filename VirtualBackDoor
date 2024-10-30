@@ -1,0 +1,257 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 27 | Scripts: 6 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.fakeKick
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["IgnoreGuiInset"] = true;
+G2L["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets;
+G2L["1"]["Name"] = [[fakeKick]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+G2L["1"]["ResetOnSpawn"] = false;
+
+
+-- StarterGui.fakeKick.Frame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(59, 61, 63);
+G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2"]["Size"] = UDim2.new(0, 413, 0, 265);
+G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.fakeKick.Frame.Leave
+G2L["3"] = Instance.new("TextButton", G2L["2"]);
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["TextSize"] = 21;
+G2L["3"]["TextColor3"] = Color3.fromRGB(53, 55, 57);
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["3"]["Size"] = UDim2.new(0, 381, 0, 38);
+G2L["3"]["Name"] = [[Leave]];
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Text"] = [[Delete Accout]];
+G2L["3"]["Position"] = UDim2.new(0.04116, 0, 0.79245, 0);
+
+
+-- StarterGui.fakeKick.Frame.Leave.UICorner
+G2L["4"] = Instance.new("UICorner", G2L["3"]);
+
+
+
+-- StarterGui.fakeKick.Frame.Leave.End
+G2L["5"] = Instance.new("Script", G2L["3"]);
+G2L["5"]["Name"] = [[End]];
+
+
+-- StarterGui.fakeKick.Frame.Leave.BlurRemover
+G2L["6"] = Instance.new("LocalScript", G2L["3"]);
+G2L["6"]["Name"] = [[BlurRemover]];
+
+
+-- StarterGui.fakeKick.Frame.Leave.Customizers
+G2L["7"] = Instance.new("Folder", G2L["3"]);
+G2L["7"]["Name"] = [[Customizers]];
+
+
+-- StarterGui.fakeKick.Frame.Leave.Customizers.TextChanger
+G2L["8"] = Instance.new("LocalScript", G2L["7"]);
+G2L["8"]["Name"] = [[TextChanger]];
+
+
+-- StarterGui.fakeKick.Frame.Line
+G2L["9"] = Instance.new("Frame", G2L["2"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Size"] = UDim2.new(0, 381, 0, 1);
+G2L["9"]["Position"] = UDim2.new(0.04116, 0, 0.2, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Name"] = [[Line]];
+
+
+-- StarterGui.fakeKick.Frame.Disconnected
+G2L["a"] = Instance.new("TextLabel", G2L["2"]);
+G2L["a"]["TextWrapped"] = true;
+G2L["a"]["BorderSizePixel"] = 0;
+G2L["a"]["TextScaled"] = true;
+G2L["a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["TextSize"] = 14;
+G2L["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.SemiBold, Enum.FontStyle.Normal);
+G2L["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["a"]["BackgroundTransparency"] = 1;
+G2L["a"]["Size"] = UDim2.new(0, 413, 0, 25);
+G2L["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["a"]["Text"] = [[Disconnected]];
+G2L["a"]["Name"] = [[Disconnected]];
+G2L["a"]["Position"] = UDim2.new(0, 0, 0.04906, 0);
+
+
+-- StarterGui.fakeKick.Frame.Disconnected.Customizers
+G2L["b"] = Instance.new("Folder", G2L["a"]);
+G2L["b"]["Name"] = [[Customizers]];
+
+
+-- StarterGui.fakeKick.Frame.Disconnected.Customizers.TextChanger
+G2L["c"] = Instance.new("LocalScript", G2L["b"]);
+G2L["c"]["Name"] = [[TextChanger]];
+
+
+-- StarterGui.fakeKick.Frame.Reason
+G2L["d"] = Instance.new("TextLabel", G2L["2"]);
+G2L["d"]["TextWrapped"] = true;
+G2L["d"]["BorderSizePixel"] = 0;
+G2L["d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["d"]["TextSize"] = 22;
+G2L["d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["d"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["d"]["BackgroundTransparency"] = 1;
+G2L["d"]["RichText"] = true;
+G2L["d"]["Size"] = UDim2.new(0, 363, 0, 135);
+G2L["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["d"]["Text"] = [[From Roblox Team. You got Banned From Roblox Platform. 37192 Years. From Byfron Reason : HACKING]];
+G2L["d"]["Name"] = [[Reason]];
+G2L["d"]["Position"] = UDim2.new(0.06295, 0, 0.20377, 0);
+
+
+-- StarterGui.fakeKick.Frame.Reason.Error
+G2L["e"] = Instance.new("TextLabel", G2L["d"]);
+G2L["e"]["TextWrapped"] = true;
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["e"]["TextSize"] = 22;
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["TextColor3"] = Color3.fromRGB(180, 180, 180);
+G2L["e"]["BackgroundTransparency"] = 1;
+G2L["e"]["Size"] = UDim2.new(0, 282, 0, 134);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[]];
+G2L["e"]["Name"] = [[Error]];
+G2L["e"]["Position"] = UDim2.new(0.10979, 0, 0.25045, 0);
+
+
+-- StarterGui.fakeKick.Frame.Reason.Customizers
+G2L["f"] = Instance.new("Folder", G2L["d"]);
+G2L["f"]["Name"] = [[Customizers]];
+
+
+-- StarterGui.fakeKick.Frame.Reason.Customizers.TextChanger
+G2L["10"] = Instance.new("LocalScript", G2L["f"]);
+G2L["10"]["Name"] = [[TextChanger]];
+
+
+-- StarterGui.fakeKick.Frame.StatsChanger
+G2L["11"] = Instance.new("Script", G2L["2"]);
+G2L["11"]["Name"] = [[StatsChanger]];
+
+
+-- StarterGui.fakeKick.Frame.Settings
+G2L["12"] = Instance.new("Folder", G2L["2"]);
+G2L["12"]["Name"] = [[Settings]];
+
+
+-- StarterGui.fakeKick.Frame.Settings.Colors
+G2L["13"] = Instance.new("Folder", G2L["12"]);
+G2L["13"]["Name"] = [[Colors]];
+
+
+-- StarterGui.fakeKick.Frame.Settings.Colors.BackgroundColor
+G2L["14"] = Instance.new("Color3Value", G2L["13"]);
+G2L["14"]["Name"] = [[BackgroundColor]];
+G2L["14"]["Value"] = Color3.fromRGB(59, 61, 63);
+
+
+-- StarterGui.fakeKick.Frame.Settings.Texts
+G2L["15"] = Instance.new("Folder", G2L["12"]);
+G2L["15"]["Name"] = [[Texts]];
+
+
+-- StarterGui.fakeKick.Frame.Settings.Texts.DisconnectedText
+G2L["16"] = Instance.new("StringValue", G2L["15"]);
+G2L["16"]["Name"] = [[DisconnectedText]];
+G2L["16"]["Value"] = [[Disconnected]];
+
+
+-- StarterGui.fakeKick.Frame.Settings.Texts.ErrorCode
+G2L["17"] = Instance.new("StringValue", G2L["15"]);
+G2L["17"]["Name"] = [[ErrorCode]];
+G2L["17"]["Value"] = [[267]];
+
+
+-- StarterGui.fakeKick.Frame.Settings.Texts.Reason
+G2L["18"] = Instance.new("StringValue", G2L["15"]);
+G2L["18"]["Name"] = [[Reason]];
+G2L["18"]["Value"] = [[You have been kicked from the game]];
+
+
+-- StarterGui.fakeKick.Frame.Settings.Texts.LeaveButtonText
+G2L["19"] = Instance.new("StringValue", G2L["15"]);
+G2L["19"]["Name"] = [[LeaveButtonText]];
+G2L["19"]["Value"] = [[Leave]];
+
+
+-- StarterGui.fakeKick.Frame.Blur
+G2L["1a"] = Instance.new("LocalScript", G2L["2"]);
+G2L["1a"]["Name"] = [[Blur]];
+
+
+-- StarterGui.fakeKick.Frame.CustomColor
+G2L["1b"] = Instance.new("LocalScript", G2L["2"]);
+G2L["1b"]["Name"] = [[CustomColor]];
+
+
+-- StarterGui.fakeKick.Frame.Leave.BlurRemover
+local function C_6()
+local script = G2L["6"];
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Lighting:WaitForChild("kickBlur_MakeSure"):Destroy()
+	end)
+end;
+task.spawn(C_6);
+-- StarterGui.fakeKick.Frame.Leave.Customizers.TextChanger
+local function C_8()
+local script = G2L["8"];
+	script.Parent.Parent.Text = (script.Parent.Parent.Parent.Settings.Texts.LeaveButtonText.Value)
+end;
+task.spawn(C_8);
+-- StarterGui.fakeKick.Frame.Disconnected.Customizers.TextChanger
+local function C_c()
+local script = G2L["c"];
+	text = script.Parent.Parent.Parent.Settings.Texts.DisconnectedText.Value
+	script.Parent.Parent.Text = (text)
+end;
+task.spawn(C_c);
+-- StarterGui.fakeKick.Frame.Reason.Customizers.TextChanger
+local function C_10()
+local script = G2L["10"];
+	reason = script.Parent.Parent.Parent.Settings.Texts.Reason.Value
+	errorCode = script.Parent.Parent.Parent.Settings.Texts.ErrorCode.Value
+	script.Parent.Parent.Text = ("You were kicked from this experience: "..reason)
+	script.Parent.Parent.Error.Text = ("(Error Code: "..errorCode..")")
+end;
+task.spawn(C_10);
+-- StarterGui.fakeKick.Frame.Blur
+local function C_1a()
+local script = G2L["1a"];
+	local blur = Instance.new("BlurEffect")
+	blur.Name = ("kickBlur_MakeSure")
+	blur.Parent = game.Lighting
+end;
+task.spawn(C_1a);
+-- StarterGui.fakeKick.Frame.CustomColor
+local function C_1b()
+local script = G2L["1b"];
+	local clr = script.Parent.Settings.Colors.BackgroundColor.Value
+	script.Parent.BackgroundColor3 = Color3.new(clr.R, clr.G, clr.B)
+end;
+task.spawn(C_1b);
+
+return G2L["1"], require;
