@@ -1,0 +1,214 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 18 | Scripts: 4 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.troll
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[troll]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.troll.fas
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Size"] = UDim2.new(0.46303, 0, 0.57585, 0);
+G2L["2"]["Position"] = UDim2.new(0.26849, 0, 0.21207, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[fas]];
+G2L["2"]["BackgroundTransparency"] = 0.45;
+
+
+-- StarterGui.troll.fas.UICorner
+G2L["3"] = Instance.new("UICorner", G2L["2"]);
+
+
+
+-- StarterGui.troll.fas.btn
+G2L["4"] = Instance.new("Frame", G2L["2"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Size"] = UDim2.new(0.94608, 0, 0.19088, 0);
+G2L["4"]["Position"] = UDim2.new(0.02652, 0, 0.78108, 0);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Name"] = [[btn]];
+G2L["4"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.troll.fas.btn.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+
+
+
+-- StarterGui.troll.fas.btn.animate
+G2L["6"] = Instance.new("LocalScript", G2L["4"]);
+G2L["6"]["Name"] = [[animate]];
+
+
+-- StarterGui.troll.fas.btn.TextButton
+G2L["7"] = Instance.new("TextButton", G2L["4"]);
+G2L["7"]["TextWrapped"] = true;
+G2L["7"]["BorderSizePixel"] = 0;
+G2L["7"]["TextSize"] = 14;
+G2L["7"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["TextScaled"] = true;
+G2L["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["7"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["7"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["7"]["BackgroundTransparency"] = 1;
+G2L["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["7"]["Text"] = [[NAH I'D WIN]];
+
+
+-- StarterGui.troll.fas.btn.TextButton.LocalScript
+G2L["8"] = Instance.new("LocalScript", G2L["7"]);
+
+
+
+-- StarterGui.troll.fas.btn.i3
+G2L["9"] = Instance.new("Frame", G2L["4"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["9"]["Size"] = UDim2.new(0.05182, 0, 1, 0);
+G2L["9"]["Position"] = UDim2.new(0.94615, 0, 0, 0);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Name"] = [[i3]];
+G2L["9"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.troll.fas.btn.i3.UICorner
+G2L["a"] = Instance.new("UICorner", G2L["9"]);
+
+
+
+-- StarterGui.troll.fas.btn.i3.animate
+G2L["b"] = Instance.new("LocalScript", G2L["9"]);
+G2L["b"]["Name"] = [[animate]];
+
+
+-- StarterGui.troll.fas.btn.i3
+G2L["c"] = Instance.new("Frame", G2L["4"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["c"]["Size"] = UDim2.new(0.05182, 0, 1, 0);
+G2L["c"]["Position"] = UDim2.new(-0.00028, 0, -0.0032, 0);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Name"] = [[i3]];
+G2L["c"]["BackgroundTransparency"] = 0.75;
+
+
+-- StarterGui.troll.fas.btn.i3.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+
+
+
+-- StarterGui.troll.fas.btn.i3.animate
+G2L["e"] = Instance.new("LocalScript", G2L["c"]);
+G2L["e"]["Name"] = [[animate]];
+
+
+-- StarterGui.troll.asd
+G2L["f"] = Instance.new("Frame", G2L["1"]);
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Size"] = UDim2.new(0.44454, 0, 0.09443, 0);
+G2L["f"]["Position"] = UDim2.new(0.27729, 0, 0.22755, 0);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Name"] = [[asd]];
+G2L["f"]["BackgroundTransparency"] = 0.45;
+
+
+-- StarterGui.troll.asd.UICorner
+G2L["10"] = Instance.new("UICorner", G2L["f"]);
+
+
+
+-- StarterGui.troll.asd.TextLabel
+G2L["11"] = Instance.new("TextLabel", G2L["f"]);
+G2L["11"]["TextWrapped"] = true;
+G2L["11"]["BorderSizePixel"] = 0;
+G2L["11"]["TextScaled"] = true;
+G2L["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["TextSize"] = 14;
+G2L["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/Jura.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["11"]["BackgroundTransparency"] = 1;
+G2L["11"]["Size"] = UDim2.new(0.97784, 0, 0.81696, 0);
+G2L["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["11"]["Text"] = [[YO BRO RATE MY GOJO😂😂😂]];
+G2L["11"]["Position"] = UDim2.new(0.02216, 0, 0.07887, 0);
+
+
+-- StarterGui.troll.ImageLabel
+G2L["12"] = Instance.new("ImageLabel", G2L["1"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["12"]["Image"] = [[rbxassetid://17321295546]];
+G2L["12"]["Size"] = UDim2.new(0.43801, 0, 0.30186, 0);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Position"] = UDim2.new(0.27993, 0, 0.3452, 0);
+
+
+-- StarterGui.troll.fas.btn.animate
+local function C_6()
+local script = G2L["6"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.027, 0,-2, 0), "Out", "Elastic", 0, true)
+	
+	wait(1.4)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_6);
+-- StarterGui.troll.fas.btn.TextButton.LocalScript
+local function C_8()
+local script = G2L["8"];
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.troll.Enabled = false
+		script.Parent.Parent.Parent.Parent.Parent.troll:Remove()
+	end)
+	
+	
+end;
+task.spawn(C_8);
+-- StarterGui.troll.fas.btn.i3.animate
+local function C_b()
+local script = G2L["b"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.474, 0,0, 0), "Out", "Elastic", 0, true)
+	
+	wait(2.5)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_b);
+-- StarterGui.troll.fas.btn.i3.animate
+local function C_e()
+local script = G2L["e"];
+	local mov = script.Parent
+	
+	local cx = mov.Position.X
+	local cy = mov.Position.Y
+	
+	mov:TweenPosition(UDim2.new(0.42, 0,0, 0), "Out", "Elastic", 0, true)
+	
+	wait(2.5)
+	mov:TweenPosition(UDim2.new(cx, cy), "Out", "Elastic", 3, true)
+end;
+task.spawn(C_e);
+
+return G2L["1"], require;
